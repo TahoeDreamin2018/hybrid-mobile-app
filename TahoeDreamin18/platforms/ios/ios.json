@@ -1,0 +1,248 @@
+{
+    "prepare_queue": {
+        "installed": [],
+        "uninstalled": []
+    },
+    "config_munge": {
+        "files": {
+            "config.xml": {
+                "parents": {
+                    "/*": [
+                        {
+                            "xml": "<feature name=\"Device\"><param name=\"ios-package\" value=\"CDVDevice\" /></feature>",
+                            "count": 1
+                        },
+                        {
+                            "xml": "<feature name=\"PushNotification\"><param name=\"ios-package\" value=\"PushPlugin\" /></feature>",
+                            "count": 1
+                        },
+                        {
+                            "xml": "<feature name=\"CDVWKWebViewEngine\"><param name=\"ios-package\" value=\"CDVWKWebViewEngine\" /></feature>",
+                            "count": 1
+                        },
+                        {
+                            "xml": "<preference name=\"CordovaWebViewEngine\" value=\"CDVWKWebViewEngine\" />",
+                            "count": 1
+                        },
+                        {
+                            "xml": "<preference name=\"BackupWebStorage\" value=\"local\" />",
+                            "count": 1
+                        },
+                        {
+                            "xml": "<preference name=\"deployment-target\" value=\"9.0\" />",
+                            "count": 1
+                        },
+                        {
+                            "xml": "<allow-navigation href=\"https://localhost\" subdomains=\"true\" />",
+                            "count": 1
+                        },
+                        {
+                            "xml": "<allow-navigation href=\"https://*.force.com\" subdomains=\"true\" />",
+                            "count": 1
+                        },
+                        {
+                            "xml": "<allow-navigation href=\"https://*.salesforce.com\" subdomains=\"true\" />",
+                            "count": 1
+                        },
+                        {
+                            "xml": "<access origin=\"https://localhost\" subdomains=\"true\" />",
+                            "count": 1
+                        },
+                        {
+                            "xml": "<access origin=\"https://*.force.com\" subdomains=\"true\" />",
+                            "count": 1
+                        },
+                        {
+                            "xml": "<access origin=\"https://*.salesforce.com\" subdomains=\"true\" />",
+                            "count": 1
+                        },
+                        {
+                            "xml": "<feature name=\"com.salesforce.oauth\"><param name=\"ios-package\" value=\"SalesforceOAuthPlugin\" /></feature>",
+                            "count": 1
+                        },
+                        {
+                            "xml": "<feature name=\"com.salesforce.network\"><param name=\"ios-package\" value=\"SFNetworkPlugin\" /></feature>",
+                            "count": 1
+                        },
+                        {
+                            "xml": "<feature name=\"com.salesforce.sdkinfo\"><param name=\"ios-package\" value=\"SFSDKInfoPlugin\" /></feature>",
+                            "count": 1
+                        },
+                        {
+                            "xml": "<feature name=\"com.salesforce.sfaccountmanager\"><param name=\"ios-package\" value=\"SFAccountManagerPlugin\" /></feature>",
+                            "count": 1
+                        },
+                        {
+                            "xml": "<feature name=\"com.salesforce.smartstore\"><param name=\"ios-package\" value=\"SFSmartStorePlugin\" /></feature>",
+                            "count": 1
+                        },
+                        {
+                            "xml": "<feature name=\"com.salesforce.smartsync\"><param name=\"ios-package\" value=\"SFSmartSyncPlugin\" /></feature>",
+                            "count": 1
+                        }
+                    ]
+                }
+            },
+            "*-Info.plist": {
+                "parents": {
+                    "UIBackgroundModes": [
+                        {
+                            "xml": "<array><string>remote-notification</string></array>",
+                            "count": 1
+                        }
+                    ]
+                }
+            },
+            "*/Entitlements-Debug.plist": {
+                "parents": {
+                    "aps-environment": [
+                        {
+                            "xml": "<string>development</string>",
+                            "count": 1
+                        }
+                    ]
+                }
+            },
+            "*/Entitlements-Release.plist": {
+                "parents": {
+                    "aps-environment": [
+                        {
+                            "xml": "<string>production</string>",
+                            "count": 1
+                        }
+                    ]
+                }
+            }
+        }
+    },
+    "installed_plugins": {
+        "cordova-plugin-whitelist": {
+            "PACKAGE_NAME": "com.tahoedreamin.mobileapp"
+        },
+        "cordova-plugin-device": {
+            "PACKAGE_NAME": "com.tahoedreamin.mobileapp"
+        },
+        "phonegap-plugin-push": {
+            "PACKAGE_NAME": "com.tahoedreamin.mobileapp"
+        },
+        "cordova-plugin-wkwebview-engine": {
+            "PACKAGE_NAME": "com.tahoedreamin.mobileapp"
+        },
+        "com.salesforce": {
+            "PACKAGE_NAME": "com.tahoedreamin.mobileapp"
+        }
+    },
+    "dependent_plugins": {},
+    "modules": [
+        {
+            "id": "cordova-plugin-device.device",
+            "file": "plugins/cordova-plugin-device/www/device.js",
+            "pluginId": "cordova-plugin-device",
+            "clobbers": [
+                "device"
+            ]
+        },
+        {
+            "id": "phonegap-plugin-push.PushNotification",
+            "file": "plugins/phonegap-plugin-push/www/push.js",
+            "pluginId": "phonegap-plugin-push",
+            "clobbers": [
+                "PushNotification"
+            ]
+        },
+        {
+            "id": "cordova-plugin-wkwebview-engine.ios-wkwebview-exec",
+            "file": "plugins/cordova-plugin-wkwebview-engine/src/www/ios/ios-wkwebview-exec.js",
+            "pluginId": "cordova-plugin-wkwebview-engine",
+            "clobbers": [
+                "cordova.exec"
+            ]
+        },
+        {
+            "id": "cordova-plugin-wkwebview-engine.ios-wkwebview",
+            "file": "plugins/cordova-plugin-wkwebview-engine/src/www/ios/ios-wkwebview.js",
+            "pluginId": "cordova-plugin-wkwebview-engine",
+            "clobbers": [
+                "window.WkWebView"
+            ]
+        },
+        {
+            "id": "com.salesforce.plugin.oauth",
+            "file": "plugins/com.salesforce/www/com.salesforce.plugin.oauth.js",
+            "pluginId": "com.salesforce"
+        },
+        {
+            "id": "com.salesforce.plugin.network",
+            "file": "plugins/com.salesforce/www/com.salesforce.plugin.network.js",
+            "pluginId": "com.salesforce"
+        },
+        {
+            "id": "com.salesforce.plugin.sdkinfo",
+            "file": "plugins/com.salesforce/www/com.salesforce.plugin.sdkinfo.js",
+            "pluginId": "com.salesforce"
+        },
+        {
+            "id": "com.salesforce.plugin.smartstore",
+            "file": "plugins/com.salesforce/www/com.salesforce.plugin.smartstore.js",
+            "pluginId": "com.salesforce",
+            "clobbers": [
+                "navigator.smartstore"
+            ]
+        },
+        {
+            "id": "com.salesforce.plugin.smartstore.client",
+            "file": "plugins/com.salesforce/www/com.salesforce.plugin.smartstore.client.js",
+            "pluginId": "com.salesforce",
+            "clobbers": [
+                "navigator.smartstoreClient"
+            ]
+        },
+        {
+            "id": "com.salesforce.plugin.sfaccountmanager",
+            "file": "plugins/com.salesforce/www/com.salesforce.plugin.sfaccountmanager.js",
+            "pluginId": "com.salesforce"
+        },
+        {
+            "id": "com.salesforce.plugin.smartsync",
+            "file": "plugins/com.salesforce/www/com.salesforce.plugin.smartsync.js",
+            "pluginId": "com.salesforce"
+        },
+        {
+            "id": "com.salesforce.util.bootstrap",
+            "file": "plugins/com.salesforce/www/com.salesforce.util.bootstrap.js",
+            "pluginId": "com.salesforce"
+        },
+        {
+            "id": "com.salesforce.util.event",
+            "file": "plugins/com.salesforce/www/com.salesforce.util.event.js",
+            "pluginId": "com.salesforce"
+        },
+        {
+            "id": "com.salesforce.util.exec",
+            "file": "plugins/com.salesforce/www/com.salesforce.util.exec.js",
+            "pluginId": "com.salesforce"
+        },
+        {
+            "id": "com.salesforce.util.logger",
+            "file": "plugins/com.salesforce/www/com.salesforce.util.logger.js",
+            "pluginId": "com.salesforce"
+        },
+        {
+            "id": "com.salesforce.util.promiser",
+            "file": "plugins/com.salesforce/www/com.salesforce.util.promiser.js",
+            "pluginId": "com.salesforce"
+        },
+        {
+            "id": "com.salesforce.util.push",
+            "file": "plugins/com.salesforce/www/com.salesforce.util.push.js",
+            "pluginId": "com.salesforce"
+        }
+    ],
+    "plugin_metadata": {
+        "cordova-plugin-whitelist": "1.3.3",
+        "cordova-plugin-device": "1.0.1",
+        "phonegap-plugin-push": "1.5.1",
+        "cordova-plugin-wkwebview-engine": "1.1.5-dev",
+        "com.salesforce": "5.2.0"
+    }
+}

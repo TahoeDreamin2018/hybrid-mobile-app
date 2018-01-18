@@ -1,0 +1,28 @@
+{
+    "prepare_queue": {
+        "installed": [],
+        "uninstalled": []
+    },
+    "config_munge": {
+        "files": {}
+    },
+    "installed_plugins": {
+        "cordova-plugin-whitelist": {
+            "PACKAGE_NAME": "com.tahoedreamin.mobileapp"
+        },
+        "com.salesforce": {
+            "PACKAGE_NAME": "com.tahoedreamin.mobileapp"
+        }
+    },
+    "dependent_plugins": {
+        "cordova-plugin-device": {
+            "PACKAGE_NAME": "com.tahoedreamin.mobileapp"
+        },
+        "phonegap-plugin-push": {
+            "PACKAGE_NAME": "com.tahoedreamin.mobileapp"
+        },
+        "cordova-plugin-wkwebview-engine": {
+            "PACKAGE_NAME": "com.tahoedreamin.mobileapp"
+        }
+    }
+}

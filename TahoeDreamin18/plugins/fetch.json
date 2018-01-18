@@ -1,0 +1,42 @@
+{
+    "cordova-plugin-whitelist": {
+        "source": {
+            "type": "registry",
+            "id": "cordova-plugin-whitelist@1"
+        },
+        "is_top_level": true,
+        "variables": {}
+    },
+    "com.salesforce": {
+        "source": {
+            "type": "registry",
+            "id": "https://github.com/forcedotcom/SalesforceMobileSDK-CordovaPlugin#v5.2.0"
+        },
+        "is_top_level": true,
+        "variables": {}
+    },
+    "cordova-plugin-device": {
+        "source": {
+            "type": "registry",
+            "id": "cordova-plugin-device@1.0.1"
+        },
+        "is_top_level": false,
+        "variables": {}
+    },
+    "phonegap-plugin-push": {
+        "source": {
+            "type": "registry",
+            "id": "phonegap-plugin-push@1.5.1"
+        },
+        "is_top_level": false,
+        "variables": {}
+    },
+    "cordova-plugin-wkwebview-engine": {
+        "source": {
+            "type": "registry",
+            "id": "https://github.com/apache/cordova-plugin-wkwebview-engine"
+        },
+        "is_top_level": false,
+        "variables": {}
+    }
+}
