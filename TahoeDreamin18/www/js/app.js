@@ -1,4 +1,6 @@
 /*global force, alert, document*/
+/*eslint no-unused-vars: ["error", {"varsIgnorePattern": "showUsersList"}]*/
+
 /* This method will fetch a list of user records from salesforce. 
 Just change the soql query to fetch another sobject. */
 var fetchRecords = function (successHandler) {
