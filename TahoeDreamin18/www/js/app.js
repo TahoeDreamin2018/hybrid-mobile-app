@@ -15,9 +15,9 @@ var showUsersList = function () {
     fetchRecords(function (data) {
         var users = data.records,
             listItemsHtml = '',
-            i;
-        for (i = 0; i < users.length; i += 1) {
-            listItemsHtml += ('<li class="table-view-cell"><div class="media-body">' + users[i].Name + '</div></li>');
+            idxUser;
+        for (idxUser = 0; idxUser < users.length; idxUser += 1) {
+            listItemsHtml += ('<li class="table-view-cell"><div class="media-body">' + users[idxUser].Name + '</div></li>');
         }
 
         document.querySelector('#users').innerHTML = listItemsHtml;
