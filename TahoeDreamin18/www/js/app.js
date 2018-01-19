@@ -6,7 +6,7 @@
 Just change the soql query to fetch another sobject. */
 var fetchRecords = function (successHandler) {
     "use strict";
-    var soql = 'SELECT Id, Name FROM User LIMIT 10';
+    var soql = 'SELECT Id, Name, Email, Title FROM User LIMIT 10';
     console.log(soql);
     force.query(soql, successHandler, function (error) {
         alert('Failed to fetch users: ' + error);
