@@ -25,6 +25,10 @@
         }
     );
     </script>
+    
+    <script type="text/html" id="userRowTemplate">
+        <li class="table-view-cell"><div data-content="Name" class="media-body"></div></li>
+    </script>
 </head>
 
 <body>
@@ -33,7 +37,7 @@
         <h1 class="title">Users</h1>
     </header>
     <ul id="users" class="table-view content">
-        <!-- Placeholder to add users list -->
+        <div id="userRows"></div>
     </ul>
 
 </body>

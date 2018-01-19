@@ -1,4 +1,4 @@
-/*global force, alert, document*/
+/*global force, alert, $*/
 /*eslint no-unused-vars: ["error", {"varsIgnorePattern": "showUsersList"}]*/
 
 /* This method will fetch a list of user records from salesforce. 
@@ -15,13 +15,8 @@ var fetchRecords = function (successHandler) {
 var showUsersList = function () {
     "use strict";
     fetchRecords(function (data) {
-        var users = data.records,
-            listItemsHtml = '',
-            idxUser;
-        for (idxUser = 0; idxUser < users.length; idxUser += 1) {
-            listItemsHtml += ('<li class="table-view-cell"><div class="media-body">' + users[idxUser].Name + '</div></li>');
-        }
+        var users = data.records;
 
-        document.querySelector('#users').innerHTML = listItemsHtml;
+        $("#userRows").loadTemplate($("#userRowTemplate"), users);
     });
 };
