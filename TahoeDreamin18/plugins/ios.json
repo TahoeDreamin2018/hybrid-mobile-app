@@ -7,10 +7,10 @@
         "files": {}
     },
     "installed_plugins": {
-        "cordova-plugin-whitelist": {
+        "com.salesforce": {
             "PACKAGE_NAME": "com.tahoedreamin.mobileapp"
         },
-        "com.salesforce": {
+        "cordova-plugin-whitelist": {
             "PACKAGE_NAME": "com.tahoedreamin.mobileapp"
         }
     },

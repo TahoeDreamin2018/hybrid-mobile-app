@@ -11,12 +11,12 @@
     "license": "Apache-2.0",
     "dependencies": {
         "SalesforceMobileSDK-CordovaPlugin": "git+https://github.com/forcedotcom/SalesforceMobileSDK-CordovaPlugin.git#v5.2.0",
+        "com.salesforce": "https://github.com/forcedotcom/SalesforceMobileSDK-CordovaPlugin#v5.2.0",
         "cordova-ios": "^4.4.0",
         "cordova-plugin-device": "^1.0.1",
         "cordova-plugin-whitelist": "^1.3.3",
         "cordova-plugin-wkwebview-engine": "git+https://github.com/apache/cordova-plugin-wkwebview-engine.git",
-        "phonegap-plugin-push": "^1.5.1",
-        "com.salesforce": "https://github.com/forcedotcom/SalesforceMobileSDK-CordovaPlugin#v5.2.0"
+        "phonegap-plugin-push": "^1.5.1"
     },
     "cordova": {
         "plugins": {
